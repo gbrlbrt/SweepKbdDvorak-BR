@@ -24,22 +24,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //-----------------------------------------------------------------------------------------------------------------------
 	MT(KC_ESC, KC_SLASH), KC_COMMA, KC_DOT, KC_P, KC_Y,     KC_F, KC_G, KC_C, KC_R, KC_L, 
 //-----------------------------------------------------------------------------------------------------------------------
- 	KC_A, KC_O, KC_E, MT(MOD_LGUI, KC_U), KC_I,     KC_D, MT(MOD_RGUI, KC_H), KC_T, KC_N, KC_S, 
+ 	KC_A, KC_O, KC_E, LGUI(KC_U), KC_I,     KC_D, RGUI(KC_H), KC_T, KC_N, KC_S, 
 //-----------------------------------------------------------------------------------------------------------------------
-	KC_SEMICOLON, KC_Q, KC_J, KC_K, KC_X,     KC_B, KC_M, KC_W, KC_V, KC_Z, 
+	LALT(KC_SEMICOLON), KC_Q, KC_J, KC_K, KC_X,     KC_B, KC_M, KC_W, KC_V, KC_Z, 
 //-----------------------------------------------------------------------------------------------------------------------
-	MT(MOD_LCTL, TO(1)), MT(MOD_LSFT, KC_SPACE),     RALT_T(KC_ENTER), MT(TO(2), KC_BSPC) 
+	MT(MOD_RALT, OSL(1)), MT(MOD_LSFT, KC_SPACE),     LCTL(KC_ENTER), MT(, KC_BSPC) 
   ),
 
   [1] = LAYOUT(
 //-----------------------------------------------------------------------------------------------------------------------
 	KC_1, KC_2, KC_3, KC_4, KC_5,     KC_6, KC_7, KC_8, KC_9, KC_0, 
 //-----------------------------------------------------------------------------------------------------------------------
-	KC_QUOTE, KC_GRAVE, KC_CIRCUMFLEX, KC_TILD, KC_MINUS,     KC_EQUAL, KC_DOT, KC_COMMA, KC_QUES, KCEXLM, 
+	KC_GRAVE, KC_CIRCUMFLEX, KC_TILD, LGUI(KC_QUOTE), KC_EXLM,     , RGUI(KC_LEFT), KC_DOWN, KC_UP, KC_RIGHT, 
 //-----------------------------------------------------------------------------------------------------------------------
-	KC_NUBS, KC_LBRC, KC_RBRC, KC_LPRN, KC_RPRN,     KC_CAPS, KC_TAB, OSM(MOD_RCTL), OSM(MOD_LALT), KC_DEL
+	KC_NUBS, KC_EQUAL, KC_MINUS, KC_LBRC, KC_LPRN,     KC_RPRN, KC_RBRC, KC_PGDOWN, KC_PGUP, MT(KC_CAPS, KC_DEL)
 //-----------------------------------------------------------------------------------------------------------------------
-	MT(MOD_LCTL, TO(1)),  MT(MOD_LSFT, KC_SPACE),     RALT_T(KC_ENTER), MT(TO(2), KC_BSPC), 
+	MT(MOD_LALT, TO(1)),  MT(MOD_LSFT, KC_TAB),     LCTL(KC_ENTER), TO(0), 
   ),
 
   [2] = LAYOUT(
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //---------------------------------------------------------------------------------------------------------------------
 	KC_AUDIO_MUTE,  KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC_MEDIA_STOP, KC_BRIGHTNESS_DOWN,     KC_BRIGHTNESS_UP, KC_PSCREEN, KC_F13, KC_F14, KC_F15, 
 //-----------------------------------------------------------------------------------------------------------------------
-	TO(1), MT(MOD_LSFT, KC_SPACE),        RALT_T(KC_ENTER), TO(0) 
+	TO(1), MT(MOD_LSFT, KC_SPACE),        LCTL(KC_ENTER), TO(0) 
   )
 };
 
