@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //-----------------------------------------------------------------------------------------------------------------------
 	LALT_T(KC_SEMICOLON), KC_Q, KC_J, KC_K, KC_X,     KC_B, KC_M, KC_W, KC_V, KC_Z, 
 //-----------------------------------------------------------------------------------------------------------------------
-	MT(MOD_LCTL, OSL(1)), MT(MOD_LSFT, KC_SPACE),     RALT_T(KC_ENTER), MT(TO(2), KC_BSPC) 
+	MT(MOD_LCTL, OSL(1)), MT(MOD_LSFT, KC_SPACE),     RALT_T(KC_ENTER), MT(TO(1), KC_BSPC) 
   ),
 
   [1] = LAYOUT(
@@ -37,18 +37,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //-----------------------------------------------------------------------------------------------------------------------
 	KC_GRAVE, KC_CIRCUMFLEX, KC_TILD, LGUI(KC_QUOTE), KC_EXLM,     KC_MINUS, RGUI(KC_LEFT), KC_DOWN, KC_UP, KC_RIGHT, 
 //-----------------------------------------------------------------------------------------------------------------------
-	LALT_T(KC_NUBS), KC_EQUAL, KC_MINUS, KC_LBRC, KC_LPRN,     KC_RPRN, KC_RBRC, KC_PGDOWN, KC_PGUP, MT(KC_CAPS, KC_DEL)
+	LALT_T(KC_NUBS), KC_EQUAL, KC_MINUS, KC_LBRC, KC_LPRN,     KC_RPRN, KC_RBRC, KC_PGDOWN, KC_PGUP, MT(KC_CAPS, KC_DEL),
 //-----------------------------------------------------------------------------------------------------------------------
-	MT(MOD_LALT, TO(1)),  MT(MOD_LSFT, KC_TAB),     RALT_T(KC_ENTER), TO(0), 
+	MT(MOD_LALT, TO(1)),  MT(MOD_LSFT, KC_TAB),     RALT_T(KC_ENTER), TO(2) 
   ),
 
   [2] = LAYOUT(
 //-----------------------------------------------------------------------------------------------------------------------
 	KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
 //---------------------------------------------------------------------------------------------------------------------
-	KC_F11, KC_F12, KC_F13, KC_PSCREEN, KC_PGDOWN,     KC_PGUP, KC_AUDIO_MUTE, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC_MEDIA_STOP 
+	KC_F11, KC_F12, KC_F13, KC_PSCREEN, KC_MEDIA_STOP,   KC_AUDIO_MUTE, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP,
 //---------------------------------------------------------------------------------------------------------------------
-	KC_, KC_, KC_P, KC_M, KC_BRIGHTNESS_DOWN,     KC_BRIGHTNESS_UP, KC_PSCREEN, KC_BRIGHTNESS_DOWN, KC_RIGHTNESS_UP, KC_F15, 
+	KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, 
 //-----------------------------------------------------------------------------------------------------------------------
 	TO(1), MT(MOD_LSFT, KC_SPACE),        LCTL(KC_ENTER), TO(0) 
   )
